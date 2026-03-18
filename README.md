@@ -19,8 +19,4 @@
 
 ## ER図
 ![ER図](er.drawio.png)# flea-market-app
-# test_fleamarket
-# test_fleamarket
-# test_fleamarket
-# test_fleamarket
-# flea_market
+
