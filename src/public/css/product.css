@@ -18,33 +18,33 @@
     color: #FF0000;
 }
 
-.content__inner{
+.product-list{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 15px;
     margin: 60px 30px;
 }
-.content__inner-group{
+.product-card{
     margin-bottom: 20px;
 }
-.content__inner-link{
+.product-card__link{
     text-decoration: none;
 }
-.content__inner-image{
+.product-card__image{
     width: 290px;
     height: 290px;
 }
-.content__inner-text{
+.product-card__body{
     display: flex;
     width: 290px;
 }
-.content__inner-sold{
+.product-card__sold{
     font-size: 25px;
     margin-top: 5px;
     margin-right: 10px;
     color: #FF0000;
 }
-.content__inner-name{
+.product-card__name{
     font-size: 25px;
     margin-top: 5px;
     color: #000000;

@@ -32,7 +32,7 @@
                     <p class="form__label-item">パスワード</p>
                 </div>
                 <div class="form__input">
-                    <input type="password" name="password" id="" class="form__input-item">
+                    <input type="password" name="password" class="form__input-item">
                 </div>
                 <div class="form__error">
                     @if($errors->has('password'))
@@ -43,7 +43,7 @@
                 </div>
             </div>
             <div class="form__button">
-                <button type="submit" class="form__button-submit">ログインする</button>
+                <button type="submit" class="form__submit">ログインする</button>
             </div>
         </form>
         <div class="content__group-link">

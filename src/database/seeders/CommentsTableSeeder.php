@@ -18,27 +18,17 @@ class CommentsTableSeeder extends Seeder
             [
                 'user_id' => 1,
                 'product_id' => 1,
-                'comment' => 'コメントのテスト',
-            ],
-            [
-                'user_id' => 1,
-                'product_id' => 1,
-                'comment' => 'コメントのテストその２',
+                'comment' => '保管用のケースは付属していますか？',
             ],
             [
                 'user_id' => 1,
                 'product_id' => 2,
-                'comment' => 'コメントのテスト',
+                'comment' => '容量はどのくらいですか？',
             ],
             [
-                'user_id' => 1,
-                'product_id' => 3,
-                'comment' => 'コメントのテスト',
-            ],
-            [
-                'user_id' => 1,
-                'product_id' => 4,
-                'comment' => 'コメントのテスト',
+                'user_id' => 2,
+                'product_id' => 6,
+                'comment' => '接続端子の種類はありますか？',
             ],
         ]);
     }

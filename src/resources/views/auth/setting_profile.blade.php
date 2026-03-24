@@ -15,7 +15,7 @@
             @method('patch')
             <div class="form__image-group">
                 <div class="form__image-preview">
-                    <img id="imagePreview" src="" alt="" class="form__image">
+                    <img id="imagePreview" src="" alt="プロフィール画像プレビュー" class="form__image">
                 </div>
                 <div class="form__image-input">
                     <label for="profile_image" class="form__file-label">画像を選択する</label>

@@ -20,7 +20,7 @@ class ProductsTableSeeder extends Seeder
 
         DB::table('products')->insert([
             [
-                'user_id' => $user1->id,
+                'user_id' => $user2->id,
                 'condition_id' => 1,
                 'product_name' => '腕時計',
                 'product_image' => 'product_images/watch.jpg',
@@ -30,7 +30,7 @@ class ProductsTableSeeder extends Seeder
                 'status' => 0,
             ],
             [
-                'user_id' => $user1->id,
+                'user_id' => $user2->id,
                 'condition_id' => 2,
                 'product_name' => 'HDD',
                 'product_image' => 'product_images/hdd.jpg',
@@ -67,7 +67,7 @@ class ProductsTableSeeder extends Seeder
                 'brand' => null,
                 'product_detail' => '高性能なノートパソコン',
                 'sales_price' => 45000,
-                'status' => 1,
+                'status' => 0,
             ],
             [
                 'user_id' => $user1->id,
@@ -107,7 +107,7 @@ class ProductsTableSeeder extends Seeder
                 'brand' => 'Starbacks',
                 'product_detail' => '手動のコーヒーミル',
                 'sales_price' => 4000,
-                'status' => 0,
+                'status' => 1,
             ],
             [
                 'user_id' => $user2->id,

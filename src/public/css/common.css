@@ -18,7 +18,7 @@
     display: flex;
     justify-content: space-between;
 }
-.logout__button{
+.nav__button{
     background: transparent;
     border: none;
     outline: none;
@@ -29,21 +29,14 @@
     font-size: 24px;
     margin-right: 20px;
 }
-.header__nav-login{
+.header__nav-link{
     text-decoration: none;
     color: #ffffff;
     cursor: pointer;
     font-size: 24px;
     margin-right: 20px;
 }
-.header__nav-mypage{
-    text-decoration: none;
-    color: #ffffff;
-    cursor: pointer;
-    font-size: 24px;
-    margin-right: 20px;
-}
-.header__nav-sell{
+.header__nav-link--sell{
     width: 100px;
     height: 50px;
     border: 1px solid #000000;

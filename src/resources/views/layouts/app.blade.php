@@ -26,22 +26,22 @@
                 <ul class="header__nav-list">
                     @auth
                     <li class="header__nav-item">
-                        <form action="/logout" method="post" class="logout">
+                        <form action="/logout" method="post" class="header__nav-link">
                             @csrf
-                            <button type="submit" class="logout__button">ログアウト</button>
+                            <button type="submit" class="nav__button">ログアウト</button>
                         </form>
                     </li>
                     @endauth
                     @guest
                     <li class="header__nav-item">
-                        <a href="/login" class="header__nav-login">ログイン</a>
+                        <a href="/login" class="header__nav-link">ログイン</a>
                     </li>
                     @endguest
                     <li class="header__nav-item">
-                        <a href="{{route('mypage')}}" class="header__nav-mypage">マイページ</a>
+                        <a href="{{route('mypage')}}" class="header__nav-link">マイページ</a>
                     </li>
                     <li class="header__nav-item">
-                        <a href="{{route('sell')}}" class="header__nav-sell">出品</a>
+                        <a href="{{route('sell')}}" class="header__nav-link--sell">出品</a>
                     </li>
                 </ul>
             </nav>

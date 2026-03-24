@@ -6,7 +6,8 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Models\Product;
 use App\Models\Purchase;
-use App\Http\Requests\ShippingRequest;
+use App\Http\Requests\AddressRequest;
+use App\Http\Requests\PurchaseRequest;
 use Stripe\Stripe;
 use Stripe\Checkout\Session;
 
@@ -22,7 +23,7 @@ class PurchaseController extends Controller
     }
 
     // Stripe決済
-    public function checkout(Request $request, $item_id)
+    public function checkout(PurchaseRequest $request, $item_id)
     {
         $product = Product::findOrFail($item_id);
 
@@ -87,7 +88,7 @@ class PurchaseController extends Controller
         return view('shipping_address', compact('product'));
     }
 
-    public function confirm(ShippingRequest $request, $item_id)
+    public function confirm(AddressRequest $request, $item_id)
     {
         return redirect()->route('purchase', ['item_id' => $item_id])
         ->with([

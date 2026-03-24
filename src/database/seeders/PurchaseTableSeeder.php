@@ -17,15 +17,6 @@ class PurchaseTableSeeder extends Seeder
         DB::table('purchases')->insert([
             [
                 'user_id' => 1,
-                'product_id' => 5,
-                'purchase_price' => 45000,
-                'payment_method' => 'konbini',
-                'postcode' => '222-2222',
-                'address' => '住所変更',
-                'building' => '建物変更',
-            ],
-            [
-                'user_id' => 1,
                 'product_id' => 7,
                 'purchase_price' => 3500,
                 'payment_method' => 'card',
@@ -39,6 +30,15 @@ class PurchaseTableSeeder extends Seeder
                 'purchase_price' => 2500,
                 'payment_method' => 'konbini',
                 'postcode' => '444-2222',
+                'address' => 'テスト住所変更',
+                'building' => 'テスト建物',
+            ],
+            [
+                'user_id' => 2,
+                'product_id' => 9,
+                'purchase_price' => 4000,
+                'payment_method' => 'card',
+                'postcode' => '111-2222',
                 'address' => 'テスト住所変更',
                 'building' => 'テスト建物',
             ],

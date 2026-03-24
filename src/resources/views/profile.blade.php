@@ -33,12 +33,12 @@
         @if($products->isEmpty())
             <p>出品した商品がありません</p>
         @else
-        <div class="content__inner">
+        <div class="product-list">
             @foreach($products as $product)
-            <div class="content__inner-group">
-                <a href="{{route('detail', ['item_id' => $product->id])}}" class="content__inner-link">
-                    <img src="{{asset('storage/' . $product->product_image)}}" alt="商品画像" class="content__inner-image">
-                    <p class="content__inner-text">
+            <div class="product-card">
+                <a href="{{route('detail', ['item_id' => $product->id])}}" class="product-card__link">
+                    <img src="{{asset('storage/' . $product->product_image)}}" alt="商品画像" class="product-card__image">
+                    <p class="product-card__name">
                         {{$product->product_name}}
                     </p>
                 </a>
@@ -54,12 +54,12 @@
             @if($buyProducts->isEmpty())
                 <p>購入した商品がありません</p>
             @else
-                <div class="content__inner">
+                <div class="product-list">
                     @foreach($buyProducts as $product)
-                    <div class="content__inner-group">
-                    <a href="{{route('detail', ['item_id' => $product->id])}}" class="content__inner-link">
-                    <img src="{{asset('storage/' . $product->product_image)}}" alt="商品画像" class="content__inner-image">
-                    <p class="content__inner-text">
+                    <div class="product-card">
+                    <a href="{{route('detail', ['item_id' => $product->id])}}" class="product-card__link">
+                    <img src="{{asset('storage/' . $product->product_image)}}" alt="商品画像" class="product-card__image">
+                    <p class="product-card__name">
                     {{$product->product_name}}
                     </p>
                     </a>

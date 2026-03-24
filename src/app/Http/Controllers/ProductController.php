@@ -9,7 +9,7 @@ use App\Models\Like;
 use App\Models\Comment;
 use App\Models\Category;
 use App\Models\Condition;
-use App\Http\Requests\ProductRequest;
+use App\Http\Requests\ExhibitionRequest;
 
 class ProductController extends Controller
 {
@@ -59,7 +59,7 @@ class ProductController extends Controller
         return view('sell', compact('categories', 'conditions'));
     }
 
-    public function store(ProductRequest $request)
+    public function store(ExhibitionRequest $request)
     {
         $data = $request->only([
             'product_name',

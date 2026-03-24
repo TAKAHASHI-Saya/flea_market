@@ -47,7 +47,7 @@
                     <p class="form__label-item">パスワード</p>
                 </div>
                 <div class="form__input">
-                    <input type="password" name="password" id="" class="form__input-item">
+                    <input type="password" name="password" class="form__input-item">
                 </div>
                 <div class="form__error">
                     @if($errors->has('password'))
@@ -62,18 +62,18 @@
                     <p class="form__label-item">確認用パスワード</p>
                 </div>
                 <div class="form__input">
-                    <input type="password" name="password_confirmation" id="" class="form__input-item">
+                    <input type="password" name="password_confirmation" class="form__input-item">
                 </div>
                 <div class="form__error">
-                    @if($errors->has('password'))
-                        @foreach($errors->get('password') as $message)
+                    @if($errors->has('password_confirmation'))
+                        @foreach($errors->get('password_confirmation') as $message)
                             <p>{{$message}}</p>
                         @endforeach
                     @endif
                 </div>
             </div>
             <div class="form__button">
-                <button type="submit" class="form__button-submit">登録する</button>
+                <button type="submit" class="form__submit">登録する</button>
             </div>
         </form>
         <div class="content__group-link">
