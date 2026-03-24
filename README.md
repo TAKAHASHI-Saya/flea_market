@@ -95,7 +95,7 @@ CREATE DATABASE demo_test;
 ```
 2. PHPコンテナで、テスト用アプリケーションキーを作成
 ``` bash
-`php artisan key:generate --env=testing`
+php artisan key:generate --env=testing
 ```
 3. `php artisan config:clear`
 4. `php artisan migrate --env=testing`
