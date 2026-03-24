@@ -5,7 +5,7 @@
 /storage/logs/*.log
 /src/vendor
 /src/.env
-/src/.env.testing
+!/src/.env.testing
 /src/.env.backup
 /src/.phpunit.result.cache
 /src/docker-compose.override.yml

@@ -85,19 +85,21 @@ STRIPE_SECRET=ご自身のStripeシークレットキー
 ```
 2. テスト用クレジットカード番号で決済を実行
 - テストカード番号：4242 4242 4242 4242
+- 有効期限：未来の日付
+- CVC：3桁の数字
 
 ## テストケース
-1. `cp .env.example .env.testing`
-2. .env.testingの環境変数を以下に変更
-``` text
-DB_CONNECTION=mysql_test
-DB_HOST=mysql
-DB_PORT=3306
-DB_DATABASE=demo_test
-DB_USERNAME=root
-DB_PASSWORD=root
+1. MySQLコンテナにログインし、テスト用データベースを作成
+``` bash
+CREATE DATABASE demo_test;
 ```
-3. テストの実行
+2. PHPコンテナで、テスト用アプリケーションキーを作成
+``` bash
+`php artisan key:generate --env=testing`
+```
+3. `php artisan config:clear`
+4. `php artisan migrate --env=testing`
+5. テストの実行
 ``` bash
 php artisan test
 ```
